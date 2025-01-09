@@ -21,7 +21,6 @@ This tutorial outlines the post-install configuration of the open-source help de
 - Configure Roles for Permissions
 - Configure Departments for Ticket Visibility
 - Configure Teams for Cross-Department Collaboration
-- Allow or Restrict Ticket Creation
 - Configure Agents and Users
 - Set Up SLA Policies
 - Add Help Topics for Ticket Categories
@@ -33,91 +32,85 @@ This tutorial outlines the post-install configuration of the open-source help de
 - Admin/Analyst Login Page: http://localhost/osTicket/scp/login.php<br />
 - End Users osTicket URL: http://localhost/osTicket
 </p>
+To effectively manage roles, departments, and teams within osTicket, begin by navigating to the **Admin Panel** and accessing the appropriate sections:
 
-<h3>2. Configure Roles</h3>
-<p>
-- Navigate to Admin Panel -> Agents -> Roles<br />
-- Example Role: Supreme Admin
+ <h3>2. Roles Configuration</h3>
+   Assign permissions to agents by creating and customizing roles. For example, you can set up a **Supreme Admin** role to grant full administrative privileges.
+
+
+<p align="center">
+<img src="https://imgur.com/phaaMoF.png" alt="Configure Roles" height="80%" width="80%">
 </p>
 
 <h3>3. Configure Departments</h3>
-<p>
-- Navigate to Admin Panel -> Agents -> Departments<br />
-- Example Departments: SysAdmins, Support
+
+ Departments Configuration</h3> 
+   Organize ticket visibility and assignments by defining departments. Common examples include **SysAdmins** for IT management and **Support** for general customer inquiries.
+
+<p align="center"> 
+<img src="https://imgur.com/9Kt0A4Z.png" alt="osTicket Example Image" height="80%" width="80%">
 </p>
 
 <h3>4. Configure Teams</h3>
-<p>
-- Navigate to Admin Panel -> Agents -> Teams<br />
-- Example Team: Online Banking
+<p> 
+   Enable cross-department collaboration by forming teams. For instance, you might create an **Online Banking** team to handle issues specific to digital banking operations.
+</p>
+<p align="center">
+<img src="https://imgur.com/Bjw9gid.png" alt="osTicket Configuration Example" height="80%" width="80%">
 </p>
 
-<h3>5. Allow or Restrict Ticket Creation</h3>
+
+
+
+<h3>5. Configure Agents</h3>
 <p>
-- Navigate to Admin Panel -> Settings -> User Settings<br />
-- To restrict: Uncheck "Allow unregistered users to create tickets"<br />
-- Require registration: Enable "Require registration and login to create tickets"
+This image highlights the addition of new agents in the osTicket system, showcasing examples such as Jane, assigned to the SysAdmins department, and John, assigned to the Support department, ensuring proper role allocation within the help desk team.
+
+</p>
+<p align="center">
+<img src="https://imgur.com/ie8HREh.png" alt="osTicket Agents Configuration" height="80%" width="80%">
 </p>
 
-<h3>6. Configure Agents</h3>
-<p>
-- Navigate to Admin Panel -> Agents -> Add New<br />
-- Example Agents:<br />
-  - Jane (Department: SysAdmins)<br />
-  - John (Department: Support)
-</p>
 
 <h3>7. Configure Users</h3>
 <p>
-- Navigate to Agent Panel -> Users -> Add New<br />
-- Example Users:<br />
-  - Karen<br />
-  - Ken
+This image highlights the addition of new users in the osTicket system. Examples include Karen and Ken, showcasing how end-users are added to the system for efficient ticket management and support operations.
+
 </p>
+<p align="center">
+<img src="https://imgur.com/VSkR28Z.png" alt="osTicket User Configuration" height="80%" width="80%">
+</p>
+
 
 <h3>8. Configure SLA (Service Level Agreement)</h3>
 <p>
-- Navigate to Admin Panel -> Manage -> SLA<br />
-- Example SLAs:<br />
-  - Sev-A: Grace Period: 1 hour, Schedule: 24/7<br />
-  - Sev-B: Grace Period: 4 hours, Schedule: 24/7<br />
-  - Sev-C: Grace Period: 8 hours, Schedule: Business Hours
+This image highlights the configuration of SLA (Service Level Agreement) policies within the osTicket system. Examples include:
+- **Sev-A:** Grace Period of 1 hour with a 24/7 schedule.
+- **Sev-B:** Grace Period of 4 hours with a 24/7 schedule.
+- **Sev-C:** Grace Period of 8 hours with a schedule limited to business hours.
+These SLAs ensure timely ticket resolution based on priority and urgency.
+
 </p>
+<p align="center">
+<img src="https://imgur.com/eaLXk2F.png" alt="osTicket Help Topics Configuration" height="80%" width="80%">
+</p>
+
 
 <h3>9. Configure Help Topics</h3>
 <p>
-- Navigate to Admin Panel -> Manage -> Help Topics<br />
-- Example Help Topics:<br />
-  - Business Critical Outage<br />
-  - Personal Computer Issues<br />
-  - Equipment Request<br />
-  - Password Reset<br />
-  - Other
+This image highlights the configuration of Help Topics within the osTicket system. Examples include:
+- **Business Critical Outage**
+- **Personal Computer Issues**
+- **Equipment Request**
+- **Password Reset**
+- **Other**
+
+These Help Topics allow users to categorize their issues, ensuring tickets are directed to the appropriate departments for efficient resolution.
+
+</p>
+<p align="center">
+<img src="https://imgur.com/YTo60KZ.png" alt="osTicket Image" height="80%" width="80%">
 </p>
 
-<h2>Visual Demonstrations</h2>
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Configuration Example"/>
-</p>
-<p>
-The above image demonstrates the Admin Panel where various configurations such as roles, departments, and agents are set up.
-</p>
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="SLA Configuration"/>
-</p>
-<p>
-The SLA configuration ensures tickets are categorized and handled according to their urgency and priority.
-</p>
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Help Topics"/>
-</p>
-<p>
-Help Topics streamline ticket creation by categorizing issues, helping agents address user concerns more efficiently.
-</p>
-<br />
 
 
-   
